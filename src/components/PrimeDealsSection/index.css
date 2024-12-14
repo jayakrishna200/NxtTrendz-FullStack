@@ -1,0 +1,47 @@
+.primedeals-list-heading {
+  color: #475569;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 48px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.register-prime-img {
+  margin-top: 30px;
+}
+.register-prime-deals-cont {
+  background-image: url("https://assets.ccbp.in/frontend/react-js/exclusive-deals-banner-img.png");
+  background-size: cover;
+  height: 300px;
+  text-align: right;
+  
+}
+
+.primedeals-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.loader-container {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.remove-btn{
+  background-color: transparent;
+  border-width: 0px;
+  color:#ffffff;
+  margin: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}

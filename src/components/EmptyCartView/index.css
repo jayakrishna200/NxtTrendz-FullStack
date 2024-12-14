@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.cart-empty-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+  
+  .cart-empty-img {
+    width: 180px;
+    height: 190px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cart-empty-img {
+      width: 360px;
+      height: 380px;
+    }
+  }
+  
+  .cart-empty-heading {
+    color: #1e293b;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cart-empty-heading {
+      font-size: 32px;
+    }
+  }
+  
+  .shop-now-btn {
+    background-color: #0b69ff;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 12px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    outline: none;
+    cursor: pointer;
+  }
+  
