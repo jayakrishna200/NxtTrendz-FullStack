@@ -90,26 +90,21 @@
 
 .username-input-field {
   font-size: 14px;
-  height: 40px;
-  border: 1px solid #d7dfe9;
-  background-color: #e2e8f0;
+  height: 32px;
   color: #64748b;
-  border-radius: 2px;
-  margin-top: 5px;
+  border-width: 0px;
   padding: 8px 16px 8px 16px;
   outline: none;
 }
 
 .password-input-field {
   font-size: 14px;
-  height: 40px;
-  border: 1px solid #d7dfe9;
-  background-color: #e2e8f0;
+  height: 32px;
   color: #64748b;
-  border-radius: 2px;
-  margin-top: 5px;
-  padding: 8px 16px 8px 16px;
+  border-width: 0px;
   outline: none;
+  width: 100%;
+  padding: 8px 16px 8px 16px;
 }
 
 .login-button {
@@ -145,4 +140,28 @@
   color: #0b69ff;
   cursor: pointer;
   margin-left: 5px;
+}
+.username-input-container {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 2px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+}
+.password-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  border-radius: 2px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+}
+.show-password-btn {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  margin-right: 8px;
 }

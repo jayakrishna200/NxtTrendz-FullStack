@@ -2,6 +2,9 @@ import { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
 
+import { IoMdEyeOff } from "react-icons/io";
+import { IoEye } from "react-icons/io5";
+
 function withNavigate(Component) {
   return (props) => {
     const navigate = useNavigate();
@@ -15,6 +18,7 @@ class RegisterRoute extends Component {
     password: "",
     showSubmitError: false,
     errorMsg: "",
+    showPassword: false,
   };
 
   onChangeUsername = (event) => {
@@ -60,20 +64,36 @@ class RegisterRoute extends Component {
     }
   };
 
+  changeShowPasswordStatus = () => {
+    this.setState((prevState) => ({ showPassword: !prevState.showPassword }));
+  };
+
   renderPasswordField = () => {
-    const { password } = this.state;
+    const { password, showPassword } = this.state;
+    const passwordType = showPassword ? "text" : "password";
     return (
       <>
         <label className='input-label' htmlFor='password'>
           PASSWORD
         </label>
-        <input
-          type='password'
-          id='password'
-          className='password-input-field'
-          value={password}
-          onChange={this.onChangePassword}
-        />
+        <div className='password-input-container'>
+          <input
+            type={passwordType}
+            id='password'
+            className='password-input-field'
+            value={password}
+            onChange={this.onChangePassword}
+            placeholder='Password'
+          />
+          <button
+            className='show-password-btn'
+            onClick={this.changeShowPasswordStatus}
+            type="button"
+          >
+            {!showPassword && <IoMdEyeOff size='25' color='#64748b' />}
+            {showPassword && <IoEye size='25' color='#64748b' />}
+          </button>
+        </div>
       </>
     );
   };
@@ -85,13 +105,16 @@ class RegisterRoute extends Component {
         <label className='input-label' htmlFor='username'>
           USERNAME
         </label>
-        <input
-          type='text'
-          id='username'
-          className='username-input-field'
-          value={username}
-          onChange={this.onChangeUsername}
-        />
+        <div className='username-input-container'>
+          <input
+            type='text'
+            id='username'
+            className='username-input-field'
+            value={username}
+            onChange={this.onChangeUsername}
+            placeholder='Username'
+          />
+        </div>
       </>
     );
   };
