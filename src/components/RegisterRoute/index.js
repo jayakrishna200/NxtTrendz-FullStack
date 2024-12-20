@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import "./index.css";
 
 import { IoMdEyeOff } from "react-icons/io";
@@ -31,7 +31,6 @@ class RegisterRoute extends Component {
 
   onSubmitSuccess = (data) => {
     const { navigate } = this.props;
-    console.log(data);
     navigate("/login");
   };
 
@@ -88,7 +87,7 @@ class RegisterRoute extends Component {
           <button
             className='show-password-btn'
             onClick={this.changeShowPasswordStatus}
-            type="button"
+            type='button'
           >
             {!showPassword && <IoMdEyeOff size='25' color='#64748b' />}
             {showPassword && <IoEye size='25' color='#64748b' />}
@@ -146,6 +145,12 @@ class RegisterRoute extends Component {
             Register
           </button>
           {showSubmitError && <p className='error-message'>*{errorMsg}</p>}
+          <p>
+            Already Registered?
+            <span className='redirect-to-login' type='button' onClick={this.onSubmitSuccess} >
+              Login
+            </span>
+          </p>
         </form>
       </div>
     );
