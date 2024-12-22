@@ -4,12 +4,16 @@
 .product-item-details-container {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+  }
+  @media screen and (max-width: 767px){
+    .product-item-details-container {
+      margin-top: 160px;
+    }
   }
   
   @media screen and (min-width: 768px) {
     .product-item-details-container {
-      margin-top: 64px;
+      margin-top: 120px;
     }
   }
   

@@ -7,4 +7,10 @@
   margin: auto;
   width: 90%;
   max-width: 1110px;
+  margin-top: 120px;
+}
+@media screen and (max-width: 767px){
+  .product-sections {
+    margin-top: 160px;
+  }
 }
