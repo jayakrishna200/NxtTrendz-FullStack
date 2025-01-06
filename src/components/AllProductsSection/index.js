@@ -91,7 +91,6 @@ class AllProductsSection extends Component {
       apiStatus: apiStatusConstants.inProgress,
     });
     const jwtToken = Cookies.get("jwt_token");
-    console.log("at all products section", jwtToken);
     const { activeOptionId, activeCategoryId, searchInput, activeRatingId } =
       this.state;
     const apiUrl = `https://nxttrendz-backend-irmx.onrender.com/products/?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`;

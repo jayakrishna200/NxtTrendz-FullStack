@@ -74,6 +74,11 @@ const FiltersGroup = props => {
     }
   }
 
+  const triggerSearchIcon=()=>{
+    const {enterSearchInput} = props
+    enterSearchInput()
+  }
+
   const onChangeSearchInput = event => {
     const {changeSearchInput} = props
     changeSearchInput(event.target.value)
@@ -91,7 +96,7 @@ const FiltersGroup = props => {
           onChange={onChangeSearchInput}
           onKeyDown={onEnterSearchInput}
         />
-        <BsSearch className="search-icon" />
+        <BsSearch className="search-icon" onClick={triggerSearchIcon} />
       </div>
     )
   }
