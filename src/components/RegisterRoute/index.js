@@ -129,9 +129,9 @@ class RegisterRoute extends Component {
           alt='website logo'
         />
         <img
-          src='https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png'
-          className='login-image'
-          alt='website login'
+          src='https://res.cloudinary.com/dqzf8y0bc/image/upload/v1737306739/rb_22153_erkgie.png'
+          className='register-image'
+          alt='website register'
         />
         <form className='form-container' onSubmit={this.submitForm}>
           <img

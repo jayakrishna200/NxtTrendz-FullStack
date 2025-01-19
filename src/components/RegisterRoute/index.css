@@ -30,12 +30,12 @@
     }
   }
   
-  .login-image {
-    width: 278px;
+  .register-image {
+    width: 350px;
   }
   
   @media screen and (min-width: 992px) {
-    .login-image {
+    .register-image {
       width: 60%;
       max-width: 524px;
       flex-shrink: 1;
