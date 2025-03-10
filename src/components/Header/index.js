@@ -34,7 +34,7 @@ const Header = (props) => {
           <Link to='/'>
             <img
               className='website-logo'
-              src='https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png'
+              src='https://res.cloudinary.com/dqzf8y0bc/image/upload/v1741617809/Screenshot_2025-03-10_201231_vmcsju.png'
               alt='website logo'
             />
           </Link>
@@ -56,7 +56,7 @@ const Header = (props) => {
           <Link to='/'>
             <img
               className='website-logo'
-              src='https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png'
+              src='https://res.cloudinary.com/dqzf8y0bc/image/upload/v1741617809/Screenshot_2025-03-10_201231_vmcsju.png'
               alt='website logo'
             />
           </Link>

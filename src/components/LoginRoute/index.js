@@ -139,7 +139,7 @@ class LoginRoute extends Component {
     return (
       <div className='login-form-container'>
         <img
-          src='https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png'
+          src='https://res.cloudinary.com/dqzf8y0bc/image/upload/v1741617809/Screenshot_2025-03-10_201231_vmcsju.png'
           className='login-website-logo-mobile-img'
           alt='website logo'
         />
@@ -150,7 +150,7 @@ class LoginRoute extends Component {
         />
         <form className='form-container' onSubmit={this.submitForm}>
           <img
-            src='https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png'
+            src='https://res.cloudinary.com/dqzf8y0bc/image/upload/v1741617809/Screenshot_2025-03-10_201231_vmcsju.png'
             className='login-website-logo-desktop-img'
             alt='website logo'
           />
